@@ -72,3 +72,7 @@
 ----
  ## Library
  `tensorflow` `pytorch` `numpy` `pandas` 
+ 
+----
+
+Base on Alpha Zero - https://github.com/suragnair/alpha-zero-general
