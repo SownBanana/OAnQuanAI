@@ -1,12 +1,13 @@
 # OAnQuanAI
 
 ## Project Information
-----
-- **Neural Network**: trong `Oanquan/tensorflow/`, `OAnQuanNNet.py` là mạng CNN 1 lớp, `NNet.py` chứa các hàm *train, predict*.
+
+- **Neural Network**: trong `Oanquan/tensorflow/` `OAnQuanNNet.py` là mạng CNN 1 lớp, `NNet.py` chứa các hàm *train, predict*.
 - **MCTS**: Logic cây MCTS nằm trong `MCTS.py`.
 - **Game Ô ăn quan**: Logic game nằm trong `Oanquan/Logic.py`, tương tác với hệ thống `Oanquan/Game.py`
-
+----
 ## Training
+
 1. Ta train neural network bằng cách chạy `main.py`
 
 1. Model khi train sẽ được lưu trong `temp/` (có thể chọn đường dẫn khác) bằng tên `best.ph.tar`. Thông tin của model cũng như examples gồm có `x.index``x.meta``x.data-00000-of-00001`.
@@ -29,6 +30,7 @@
 
 ----
 ## Backup
+
  Có thể lưu lại `best.ph.tar` vào thư mục khác để dùng sau này.
  Lưu ý, cần lưu trữ cả 3 file 
 `best.ph.tar.index``best.ph.tar.meta`
