@@ -1,4 +1,4 @@
-# AlphaZero play Ô ăn quan
+# AlphaZero chơi Ô ăn quan
 ----
 ## Project Information
 - **Neural Network**: `Oanquan/tensorflow/` `OAnQuanNNet.py` là mạng CNN 1 lớp, `NNet.py` chứa các hàm *train, predict*.
@@ -57,7 +57,7 @@
  Giao diện nằm trong `OAnQuanUI\`.
  
  Cách chơi bằng giao diện:
- - Chạy `OAnQuanUI\ASever.jar`, chọn chế độ chơi qua mạng, click vào *Kết Nối*
+ - Chạy `OAnQuanUI\ASever.jar`, chọn chế độ chơi qua mạng, click vào **Kết Nối**
  - Chạy 2 file `OAnQuanUI\AClient.jar`, sửa lại đường dẫn hoặc tên của file send.txt và receive.txt của 2 client cho khác nhau.
  - Để AI chơi bằng giao diện:
    - Mở `fighter.py`
@@ -66,8 +66,8 @@
    - Chọn **numMCTSSims**, số giả lập càng lớn thì càng 'thông minh' nhưng sẽ tăng thời gian 'suy nghĩ'.
    - Chạy `fighter.py`
    - Nếu muốn 2 máy đấu với nhau, mở `a.py` em đã copy sẵn và cài đặt tương tự như `fighter`
- - Trở lại với 2 `AClient.jar`, click *CONNECT*, đợi connect xong.
- - Trên `ASever.jar`, đến khi có đủ 2 kết nối, ta có thể click *Vào game* để bắt đầu chơi.
+ - Trở lại với 2 `AClient.jar`, click **CONNECT**, đợi connect xong.
+ - Trên `ASever.jar`, đến khi có đủ 2 kết nối, ta có thể click **Vào game** để bắt đầu chơi.
  
 ----
  ## Library
