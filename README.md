@@ -1,5 +1,5 @@
 # OAnQuanAI
-
+----
 ## Project Information
 
 - **Neural Network**: trong `Oanquan/tensorflow/` `OAnQuanNNet.py` là mạng CNN 1 lớp, `NNet.py` chứa các hàm *train, predict*.
