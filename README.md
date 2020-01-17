@@ -75,4 +75,4 @@
  
 ----
 
-Base on Alpha Zero - https://github.com/suragnair/alpha-zero-general
+Base on [Alpha Zero](https://github.com/suragnair/alpha-zero-general)
