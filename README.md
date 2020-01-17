@@ -1,4 +1,4 @@
-# OAnQuanAI
+# AlphaZero play Ô ăn quan
 ----
 ## Project Information
 - **Neural Network**: `Oanquan/tensorflow/` `OAnQuanNNet.py` là mạng CNN 1 lớp, `NNet.py` chứa các hàm *train, predict*.
@@ -34,6 +34,8 @@
  
  Lưu ý, cần lưu trữ cả 3 file
  `best.ph.tar.index` `best.ph.tar.meta` `best.ph.tar.data-00000-of-00001`
+ 
+ [Model đã được train]()
 
 ----
 ## Play
@@ -68,4 +70,5 @@
  - Trên `ASever.jar`, đến khi có đủ 2 kết nối, ta có thể click *Vào game* để bắt đầu chơi.
  
 ----
-Base on Alpha Zero -https://github.com/suragnair/alpha-zero-general
+ ## Library
+ `tensorflow` `pytorch` `numpy` `pandas` 
