@@ -35,7 +35,7 @@
  Lưu ý, cần lưu trữ cả 3 file
  `best.ph.tar.index` `best.ph.tar.meta` `best.ph.tar.data-00000-of-00001`
  
- [Model đã được train]()
+ [Model đã được train](https://drive.google.com/open?id=1DNCk3tDlzGNC35iFGIK2bDsClGeHvuij)
 
 ----
 ## Play
