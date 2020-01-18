@@ -11,13 +11,13 @@ import os
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
-send = os.getcwd() + "\\OanquanUI\\comunicate\\send.txt"           #đường dẫn đến file send.txt
-receive = os.getcwd() + "\\OanquanUI\\comunicate\\receive.txt"     #đường dẫn đến file receive.txt
+send = os.getcwd() + "\\OanquanUI\\comunicate\\send1.txt"           #đường dẫn đến file send.txt
+receive = os.getcwd() + "\\OanquanUI\\comunicate\\receive1.txt"     #đường dẫn đến file receive.txt
 curplayer = 1
 game = OanquanGame(8)
 net = NNet(game)
 net.load_checkpoint('./temp/', 'best.pth.tar')          #chọn model
-args = dotdict({'numMCTSSims': 500, 'cpuct': 1.0})                  # 6500 ~ 29s : 500 ~ 2s : 1000 ~ 4s
+args = dotdict({'numMCTSSims': 20, 'cpuct': 1.0})                  # 6500 ~ 29s : 500 ~ 2s : 1000 ~ 4s
 
 mcts = MCTS(game, net, args)
 # for i in range(10000):

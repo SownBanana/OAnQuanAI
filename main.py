@@ -14,12 +14,12 @@ args = dotdict({
     'maxlenOfQueue': 200000,    # Number of game examples to train the neural networks.
     'numMCTSSims': 25,          # Number of games moves for MCTS to simulate.
     'arenaCompare': 40,         # Number of games to play during arena play to determine if new net will be accepted.
-    'cpuct': 1,                 # hay bị lặp rồi, kp đâu ldo cái task chạy ngầm kia nó k đủ tài nguyên để chạy lặp thì cũng chỉ lặp đc 200 lần thôi
+    'cpuct': 1,
 
     'checkpoint': './temp/',    # folder lưu examples và best model
 
-    'load_model': True,
-    'load_folder_file': ('/dev/models/8x100x50','best.pth.tar'),
+    'load_model': False,         # False - train lại từ đầu
+    'load_folder_file': ('./temp/','best.pth.tar'), # model để train tiếp tục
     'numItersForTrainExamplesHistory': 20,
 
 })

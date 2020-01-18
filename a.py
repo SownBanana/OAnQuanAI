@@ -11,12 +11,12 @@ import os
 
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
-send = "D:\\ai\\send1.txt"
-receive = "D:\\ai\\receive1.txt"
+send = "P:\\Python\\OAnQuanGit\\OAnQuanAI\\OanquanUI\\comunicate\\send1.txt"
+receive = "P:\\Python\\OAnQuanGit\\OAnQuanAI\\OanquanUI\\comunicate\\receive1.txt"
 curplayer = 1
 game = OanquanGame(8)
 net = NNet(game)
-net.load_checkpoint('./BackupBest/', 'est.pth.tar')
+net.load_checkpoint('./temp/', 'best.pth.tar')
 # args = dotdict({'numMCTSSims': 200, 'cpuct': 1.0})
 
 args = dotdict({
@@ -28,13 +28,6 @@ args = dotdict({
     'numMCTSSims': 20,        # 6500 ~ 29s : 500 ~ 2s :
     'arenaCompare': 40,
     'cpuct': 1,
-
-    'checkpoint': './temp/',
-
-    'load_model': False,
-    'load_folder_file': ('/dev/models/8x100x50','best.pth.tar'),
-    'numItersForTrainExamplesHistory': 20,
-
 })
 
 mcts = MCTS(game, net, args)

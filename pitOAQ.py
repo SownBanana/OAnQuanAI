@@ -32,7 +32,7 @@ fist_mcst_fighter = lambda x: np.argmax(mcts1.getActionProb(x, temp=0))
 
 n2 = NNet(game)
 
-n2.load_checkpoint('./BackupBest/', 'best.pth.tar')  # chose model
+n2.load_checkpoint('./temp/', 'best.pth.tar')              # chose model
 args2 = dotdict({'numMCTSSims': 100, 'cpuct': 1.0})
 mcts2 = MCTS(game, n2, args2)
 second_mcst_player = lambda x: np.argmax(mcts2.getActionProb(x, temp=0))
