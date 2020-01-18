@@ -23,6 +23,7 @@ mcts = MCTS(game, net, args)
 # for i in range(10000):
     # mcts.search(OanquanGame.getInitBoard())
 nnplayer = lambda x: np.argmax(mcts.getActionProb(x, temp = 0))
+print("Ready to connect")
 while True:
     while IO.readFile(receive) != "":
         dataa = pd.read_csv(receive, delimiter="\s+", header=None)

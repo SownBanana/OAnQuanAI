@@ -7,7 +7,7 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 args = dotdict({
-    'numIters': 1000,
+    'numIters': 1,
     'numEps': 100,              # Số lần Self-play mỗi iter
     'tempThreshold': 15,
     'updateThreshold': 0.6,     # Update best.pth.tar nếu tỉ lệ thắng trên ngưỡng

@@ -17,12 +17,13 @@ curplayer = 1
 game = OanquanGame(8)
 net = NNet(game)
 net.load_checkpoint('./temp/', 'best.pth.tar')          #chọn model
-args = dotdict({'numMCTSSims': 20, 'cpuct': 1.0})                  # 6500 ~ 29s : 500 ~ 2s : 1000 ~ 4s
+args = dotdict({'numMCTSSims': 500, 'cpuct': 1.0})                  # 6500 ~ 29s : 500 ~ 2s : 1000 ~ 4s
 
 mcts = MCTS(game, net, args)
 # for i in range(10000):
     # mcts.search(OanquanGame.getInitBoard())
 nnplayer = lambda x: np.argmax(mcts.getActionProb(x, temp = 0))
+print("Ready to connect")
 while True:
     while IO.readFile(receive) != "":
         dataa = pd.read_csv(receive, delimiter="\s+", header=None)
